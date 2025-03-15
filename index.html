@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>报告标题生成器【国企篇】</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入一个简单的图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部标题区域 -->
+        <header>
+            <h1>报告标题生成器【国企篇】</h1>
+            <p>基于DeepSeek，为您的报告生成专业的总标题和小标题结构</p>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main>
+            <!-- 输入区域 -->
+            <section class="input-section">
+                <h2>输入您的工作要求</h2>
+                <div class="input-container">
+                    <textarea id="content-input" placeholder="请在此处输入您的文章内容或主要观点...（建议不少于100字）"></textarea>
+                    <div class="button-container">
+                        <button id="generate-btn"><i class="fas fa-magic"></i> 生成标题</button>
+                        <button id="clear-btn"><i class="fas fa-eraser"></i> 清空内容</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 加载动画 -->
+            <div id="loading" class="loading-container">
+                <div class="loading-spinner"></div>
+                <p>正在生成中，请稍候...</p>
+            </div>
+
+            <!-- 结果展示区域 -->
+            <section id="result-section" class="result-section">
+                <h2>生成结果</h2>
+                <div class="result-container">
+                    <div class="result-item">
+                        <h3>报告总标题</h3>
+                        <div id="main-title" class="title-box"></div>
+                    </div>
+                    <div class="result-item">
+                        <h3>小标题结构</h3>
+                        <div id="sub-titles" class="subtitle-container"></div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button id="copy-btn"><i class="fas fa-copy"></i> 复制结果</button>
+                    <button id="save-btn"><i class="fas fa-download"></i> 保存为文档</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- 底部页脚 -->
+        <footer>
+            <p>© 2025 国企报告标题生成器 - 让您的报告标题更接地气</p>
+        </footer>
+    </div>
+
+    <!-- 引入JavaScript脚本 -->
+    <script src="script.js"></script>
+</body>
+</html>
