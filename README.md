@@ -28,7 +28,7 @@
 - API调用：使用fetch API调用SiliconFlow的DeepSeek-R1模型
 
 ## 页面结构
-![报告生成器界面截图](media/界面.png)
+![报告生成器界面截图](main/界面.png)
 - **主页面（index.html）**：包含输入框、生成按钮和结果展示区
 - **样式文件（style.css）**：定义网站的样式和布局
 - **JavaScript文件（script.js）**：处理用户交互和API调用
